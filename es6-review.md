@@ -26,10 +26,10 @@
 
   # Sử dụng với object
 
-    ### Cú pháp cơ bản
+  ### Cú pháp cơ bản
       let {firstName, lastName} = {firstName: "Le Van", lastName: "Thinh"} 
 
-    ### Gán lại tên biến
+  ### Gán lại tên biến
 
       let {firstName: fName, lastName: lName} = {firstName: "Le Van", lastName: "Thinh"}
 
@@ -39,13 +39,13 @@
       let firstName = obj.firstName;
       let lastName : obj.lastName;
 
-    ### Khai báo giá trị default
+  ### Khai báo giá trị default
       let {firstName, lastName = “Thinh”} = {firstName: “Le Van”}
 
-    ### Gán các giá trị còn lại của object cho một biến khác
+  ### Gán các giá trị còn lại của object cho một biến khác
       let {a, b, ...others} = {a:10, b : 20, c:30, d: 40};
 
-    ### Sử dụng array và object lồng nhau
+  ### Sử dụng array và object lồng nhau
 
       let options = {
           size: {
@@ -57,7 +57,7 @@
 
       let {size : {width: myWidth, height: myHeight}, items: myItems} = options
 
-    ### Set các tham số default cho một hàm
+  ### Set các tham số default cho một hàm
 
       function myFnc( {x = 1, y = 2} = { } ){
         console.log(x,y);
@@ -132,8 +132,10 @@
       return number % 2 === 0
     }
 
-  let checkEvent = (number) =>  number % 2 === 0
+    
 
-  Vd : let min = (a,b) => (a < b ? a: b);
+    Vd : 
+      let min = (a,b) => (a < b ? a: b);
+      let checkEvent = (number) =>  number % 2 === 0
 
 
