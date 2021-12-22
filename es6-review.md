@@ -1,6 +1,6 @@
 # Destructing assignment 
   Là 1 cú pháp của es6 để lấy dữ liệu từ object hoặc array và gán nó vào các biến thông thường
-  * Sử dụng với array 
+  # Sử dụng với array 
       let [firstName, lastName] = ["LeVan", "Thinh"]
   
     tương đương với cú pháp:
@@ -24,7 +24,7 @@
       let a = [1,2];
       let […b] = a;
 
-  * Sử dụng với object
+  # Sử dụng với object
 
     ### Cú pháp cơ bản
       let {firstName, lastName} = {firstName: "Le Van", lastName: "Thinh"} 
@@ -117,16 +117,16 @@
 
 # Arrow function
 
-  C1:
+  ### C1:
     function Name(parameters) {
       //code block
     }
-  C2:
+  ### C2:
     let name = function(parameters) {
       //code block
     }
 
-  C3:
+  ### C3:
     let functionName = (parameters) => {
       //code block
       return number % 2 === 0
